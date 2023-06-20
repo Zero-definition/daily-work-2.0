@@ -2,6 +2,8 @@ class Solution {
     public boolean isValid(String s) {
         String c="";
         int l=s.length();
+        if(l%2!=0)
+        return(false);
         if(s.charAt(l-1)=='('||s.charAt(l-1)=='['||s.charAt(l-1)=='{')
             {
                 return(false);
