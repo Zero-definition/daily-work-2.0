@@ -2,6 +2,10 @@ class Solution {
     public boolean isValid(String s) {
         String c="";
         int l=s.length();
+        if(s.charAt(l-1)=='('||s.charAt(l-1)=='['||s.charAt(l-1)=='{')
+            {
+                return(false);
+            }
         for(int i=0;i<l;i++)
         {
             if(c==""||s.charAt(i)=='('||s.charAt(i)=='['||s.charAt(i)=='{')
